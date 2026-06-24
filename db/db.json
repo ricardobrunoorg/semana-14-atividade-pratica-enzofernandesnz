@@ -14,5 +14,117 @@
       "nome": "Usuario Comum",
       "email": "user@abc.com"
     }
+  ],
+  "eventos": [
+    {
+      "id": "1",
+      "nome": "Show do Coldplay",
+      "tipo": "show",
+      "data": "2025-06-10",
+      "cidade": "São Paulo",
+      "local": "Allianz Parque",
+      "lat": -23.5273,
+      "lng": -46.6757,
+      "descricao": "Show internacional da banda Coldplay"
+    },
+    {
+      "id": "2",
+      "nome": "Workshop de React",
+      "tipo": "workshop",
+      "data": "2025-06-15",
+      "cidade": "Rio de Janeiro",
+      "local": "Centro de Convenções RJ",
+      "lat": -22.9068,
+      "lng": -43.1729,
+      "descricao": "Workshop prático de desenvolvimento React"
+    },
+    {
+      "id": "3",
+      "nome": "Palestra sobre IA",
+      "tipo": "palestra",
+      "data": "2025-06-20",
+      "cidade": "Belo Horizonte",
+      "local": "PUC Minas",
+      "lat": -19.9245,
+      "lng": -43.9352,
+      "descricao": "Palestra sobre Inteligência Artificial aplicada"
+    },
+    {
+      "id": "4",
+      "nome": "Festival de Jazz",
+      "tipo": "show",
+      "data": "2025-07-05",
+      "cidade": "Curitiba",
+      "local": "Ópera de Arame",
+      "lat": -25.3773,
+      "lng": -49.2559,
+      "descricao": "Festival anual de Jazz de Curitiba"
+    },
+    {
+      "id": "5",
+      "nome": "Workshop de UX Design",
+      "tipo": "workshop",
+      "data": "2025-07-12",
+      "cidade": "São Paulo",
+      "local": "MASP",
+      "lat": -23.5613,
+      "lng": -46.6558,
+      "descricao": "Workshop imersivo de UX e design thinking"
+    },
+    {
+      "id": "6",
+      "nome": "Palestra de Empreendedorismo",
+      "tipo": "palestra",
+      "data": "2025-07-18",
+      "cidade": "Porto Alegre",
+      "local": "FIERGS",
+      "lat": -30.0277,
+      "lng": -51.2287,
+      "descricao": "Palestra motivacional sobre empreendedorismo"
+    },
+    {
+      "id": "7",
+      "nome": "Conferência Tech Summit",
+      "tipo": "conferencia",
+      "data": "2025-08-02",
+      "cidade": "São Paulo",
+      "local": "Expo Center Norte",
+      "lat": -23.5089,
+      "lng": -46.6244,
+      "descricao": "Maior conferência de tecnologia do Brasil"
+    },
+    {
+      "id": "8",
+      "nome": "Show Sertanejo",
+      "tipo": "show",
+      "data": "2025-08-15",
+      "cidade": "Goiânia",
+      "local": "Serra Dourada",
+      "lat": -16.6864,
+      "lng": -49.2643,
+      "descricao": "Grande show de música sertaneja"
+    },
+    {
+      "id": "9",
+      "nome": "Conferência de Saúde Digital",
+      "tipo": "conferencia",
+      "data": "2025-08-22",
+      "cidade": "Brasília",
+      "local": "Centro de Convenções Ulysses Guimarães",
+      "lat": -15.7942,
+      "lng": -47.8825,
+      "descricao": "Conferência sobre tecnologia na saúde"
+    },
+    {
+      "id": "10",
+      "nome": "Workshop de Node.js",
+      "tipo": "workshop",
+      "data": "2025-09-10",
+      "cidade": "Recife",
+      "local": "Porto Digital",
+      "lat": -8.0631,
+      "lng": -34.8711,
+      "descricao": "Workshop avançado de Node.js e APIs REST"
+    }
   ]
 }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerenciar Eventos</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>🎯 Gerenciador de Eventos</h1>
+    <nav>
+      <a href="index.html" class="nav-ativo">📋 Eventos</a>
+      <a href="dashboard.html">📊 Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="crud-layout">
+
+      <!-- Formulário -->
+      <aside class="form-container">
+        <h2 id="form-titulo">➕ Novo Evento</h2>
+        <form id="form-evento">
+          <input type="hidden" id="evento-id"/>
+
+          <label>Nome do Evento</label>
+          <input type="text" id="evento-nome" placeholder="Ex: Show do Coldplay" required/>
+
+          <label>Tipo</label>
+          <select id="evento-tipo" required>
+            <option value="">Selecione...</option>
+            <option value="show">Show</option>
+            <option value="workshop">Workshop</option>
+            <option value="palestra">Palestra</option>
+            <option value="conferencia">Conferência</option>
+          </select>
+
+          <label>Data</label>
+          <input type="date" id="evento-data" required/>
+
+          <label>Cidade</label>
+          <input type="text" id="evento-cidade" placeholder="Ex: São Paulo" required/>
+
+          <label>Local</label>
+          <input type="text" id="evento-local" placeholder="Ex: Allianz Parque" required/>
+
+          <label>Latitude</label>
+          <input type="number" id="evento-lat" step="any" placeholder="Ex: -23.5273" required/>
+
+          <label>Longitude</label>
+          <input type="number" id="evento-lng" step="any" placeholder="Ex: -46.6757" required/>
+
+          <label>Descrição</label>
+          <textarea id="evento-descricao" rows="3" placeholder="Breve descrição do evento..."></textarea>
+
+          <div class="form-botoes">
+            <button type="submit" class="btn-salvar" id="btn-salvar">💾 Salvar</button>
+            <button type="button" class="btn-cancelar hidden" id="btn-cancelar">✕ Cancelar</button>
+          </div>
+        </form>
+      </aside>
+
+      <!-- Lista -->
+      <section class="lista-container">
+        <div class="lista-header">
+          <h2>📋 Eventos Cadastrados</h2>
+          <input type="text" id="busca" placeholder="🔍 Filtrar por nome ou cidade..."/>
+        </div>
+        <div id="lista-eventos"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Toast de notificação -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="assets/scripts/crud.js"></script>
+</body>
+</html>

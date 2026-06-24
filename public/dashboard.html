@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard de Eventos</title>
+
+  <!-- FullCalendar -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet"/>
+  <!-- Leaflet -->
+  <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>🎯 Dashboard de Eventos</h1>
+    <nav>
+      <a href="index.html">📋 Eventos</a>
+      <a href="dashboard.html" class="nav-ativo">📊 Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Cards de resumo -->
+    <section id="resumo" class="cards-container"></section>
+
+    <!-- Calendário -->
+    <section id="sec-calendario" class="secao">
+      <h2>📅 Calendário de Eventos</h2>
+      <div id="calendar"></div>
+    </section>
+
+    <!-- Gráficos -->
+    <section id="sec-graficos" class="secao">
+      <h2>📊 Análise por Tipo e Período</h2>
+      <div class="graficos-grid">
+        <div class="grafico-box">
+          <h3>Distribuição por Tipo</h3>
+          <canvas id="graficoPizza"></canvas>
+        </div>
+        <div class="grafico-box">
+          <h3>Eventos por Mês</h3>
+          <canvas id="graficoBarra"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section id="sec-mapa" class="secao">
+      <h2>🗺️ Localização dos Eventos</h2>
+      <p class="legenda-mapa">
+        <span class="dot" style="background:#e74c3c"></span> Show &nbsp;
+        <span class="dot" style="background:#3498db"></span> Workshop &nbsp;
+        <span class="dot" style="background:#2ecc71"></span> Palestra &nbsp;
+        <span class="dot" style="background:#9b59b6"></span> Conferência
+      </p>
+      <div id="map"></div>
+    </section>
+
+  </main>
+
+  <!-- Modal de detalhes -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modal-fechar" class="modal-fechar">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- FullCalendar -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="assets/scripts/app.js"></script>
+</body>
+</html>
